@@ -1,13 +1,14 @@
-
-from salary import calculate_salary
-from db import people
+from application import salary, db
+# from application import db
+# from salary import calculate_salary
+from application.db import people
 from datetime import datetime
 
 
 
 
 if __name__=='__main__':
-    calculate_salary()
+    salary.calculate_salary()
     people.get_employees()
     d = datetime.now()
     print(datetime.now())
